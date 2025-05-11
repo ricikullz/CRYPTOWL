@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTOWL</title>
+</head>
+
+<body>
+
+<div id="send_msg_success_div" class="send_msg_success_div" name="send_msg_success_div">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+
+    {% for info_msg in get_flashed_messages() %}
+    <div id="read_msg_info_flash_div" class="read_msg_info_flash_div" name="read_msg_info_flash_div">
+        {{ info_msg }}
+    </div>
+    {% endfor %}
+
+    <div id="read_msg_result_div" class="read_msg_result_div" name="read_msg_result_div">
+        <div id="read_msg_div" class="read_msg_div" name="read_msg_div">
+            <p id="msg_content" class="msg_content" name="msg_content">{{ msg_content }}</p>
+        </div>
+    </div>
+
+    <a href="/" id="read_msg_result_a" class="read_msg_result_a" name="read_msg_result_a">Return to MAIN PAGE</a>
+    
+</div>
+
+</body>
+
+</html>

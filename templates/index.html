@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTOWL</title>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    {% include 'header.html' %}
+    
+    
+    <div id="button_send_div" class="button_send_div" name="button_send_div">
+        <img id="button_send_icon" name="button_send_icon" class="button_send_icon" src="{{ url_for('static', filename='images/send_button_icon.png') }}">
+        <a href="/send.html">
+            <button id="button_send" class="button_send" name="button_send">SEND</button>
+        </a>
+    </div>
+
+    
+    <div id="button_read_div" class="button_read_div" name="button_read_div">
+        <img id="button_read_icon" name="button_read_icon" class="button_read_icon" src="{{ url_for('static', filename='images/read_button_icon.png') }}">
+        <a href="/read.html">
+            <button id="button_read" class="button_read" name="button_read">READ</button>
+        </a>
+    </div>
+
+</body>
+
+</html>

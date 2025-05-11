@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTOWL</title>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    {% include 'header.html' %}
+
+    {% for info_msg in get_flashed_messages() %}
+    <div id="read_msg_info_flash_div" class="read_msg_info_flash_div" name="read_msg_info_flash_div">
+        {{ info_msg }}
+    </div>
+    {% endfor %}
+
+    <div id="read_div" name="read_div" class="read_div">
+        <form method="post">
+
+            <label for="read_addr_input" id="read_addr_label" class="read_addr_label" name="read_addr_label">Enter Address</label>
+            <input id="read_addr_input" class="read_addr_input" name="read_addr_input" size="50">
+            
+            <label for="read_key_input" id="read_key_label" class="read_key_label" name="read_key_label">Enter Key</label>
+            <input id="read_key_input" class="read_key_input" name="read_key_input" size="50">
+
+            <button type="submit" id="read_msg_button" class="read_msg_button" name="read_msg_button">READ MESSAGE</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
