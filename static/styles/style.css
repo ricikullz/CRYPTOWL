@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'hack-regular';
+  src: url('../fonts/hack-regular.woff2') format('woff2');
+  }
+  
+@font-face {
+  font-family: 'hack-bold';
+  src: url('../fonts/hack-bold.woff2') format('woff2');
+  }
+
+/* Header div on HEADER.html */
+
+.header_div {
+  position: absolute;
+  left: 30%;
+}
+
+.header_h1 {
+  font-family: 'hack-bold';
+  font-size: 5em;    
+  }
+
+.header_h2 {
+  font-family: 'hack-regular';
+  font-size: 1.2em;
+  }
+
+.header_logo_img {
+  width: 60%;
+  position: absolute;
+  left: 100%;
+  top: 10%;
+  }
+
+/* Buttons on INDEX.html */
+
+.button_send_icon {
+  width: 20%;
+}
+
+.button_read_icon {
+  width: 20%;
+}
+
+.button_send_div {
+  position: absolute;
+  top: 55%;
+  left: 37%;
+}
+
+.button_read_div {
+  position: absolute;
+  top: 55%;
+  left: 54%;
+}
+
+.button_send {
+  font-family: 'hack-regular';
+  font-size: 2.4em;
+  display: block;
+  
+}
+
+.button_read {
+  font-family: 'hack-regular';
+  font-size: 2.4em;
+  display: block;
+  
+}
+
+/* a no text decoration for href */
+a {
+  text-decoration: none;
+}
+
+/* Send */
+.send_div {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.send_msg_label {
+  font-family: 'hack-bold';
+  display: block;
+}
+
+.send_msg_textarea {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.send_msg_button {
+  position: relative;
+  left: 22%;
+  top: -350px;
+  font-family: 'hack-regular';
+  font-size: 1.5em;
+}
+
+/* Send Result */
+.send_msg_info_flash_div {
+  font-family: 'hack-bold';
+  font-size: 1.5em;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.send_msg_result_div {
+  border: dotted;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 5px;
+  position: absolute;
+  top: 44%;
+  left: 25%;
+}
+
+.send_msg_addr_label {
+  display: inline;
+  font-family: 'hack-regular';
+  font-size: 1.5em;
+}
+
+.addr_value {
+  display: inline;
+  font-family: 'hack-regular';
+  font-size: 1.5em;
+}
+
+.send_msg_key_label {
+  display: inline;
+  font-family: 'hack-regular';
+  font-size: 1.5em;
+}
+
+.key_value {
+  display: inline;
+  font-family: 'hack-regular';
+  font-size: 1.5em;
+}
+
+.send_msg_result_a {
+  font-family: 'hack-bold';
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+/* Read */
+.read_div {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+
+.read_addr_label {
+  font-family: 'hack-bold';
+  display: block;
+}
+
+.read_addr_input {
+  display: inline-block;
+}
+
+.read_key_label {
+  font-family: 'hack-bold';
+  display: block;
+  margin-top: 30px;
+}
+
+.read_key_input {
+  display: inline-block;
+}
+
+.read_msg_button {
+  position: relative;
+  margin-top: 30px;
+  display: block;
+  font-family: 'hack-regular';
+  font-size: 1.5em;
+  left: 30%;
+}
+
+.read_msg_info_flash_div {
+  font-family: 'hack-bold';
+  font-size: 1.5em;
+  position: fixed;
+  top: 40%;
+  left: 25%;
+}
+
+/* Read Result */
+.read_msg_info_flash_div {
+  font-family: 'hack-bold';
+  font-size: 1.5em;
+  position: absolute;
+  top: 10%;
+  left: 42%;
+}
+
+.read_msg_result_div {
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+  position: absolute;
+  top: 20%;
+}
+
+.read_msg_div {
+  border: dotted;
+  padding: 10px 10px 10px 10px;
+  overflow-y: auto;
+  overflow-x: auto;
+  max-height: 600px;
+  max-width: 1900px;
+}
+
+.msg_content {
+  display: inline;
+  font-family: 'hack-regular';
+  font-size: 1.5em;
+  white-space: pre-wrap;
+}
+
+.read_msg_result_a {
+  font-family: 'hack-bold';
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-left: 20px;
+}
